@@ -1,0 +1,113 @@
+{
+  "phase": "after",
+  "avatarMode": "relative",
+  "count": 1,
+  "capturedAt": "2026-09-08T01:03:32.270Z",
+  "requests": [
+    {
+      "url": "http://127.0.0.1:4318/__fixture",
+      "status": 200,
+      "contentType": "application/json"
+    },
+    {
+      "url": "http://127.0.0.1:4318/uploads/agent-custom-avatar.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4318/uploads/agent-custom-avatar.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "url": "http://127.0.0.1:4318/api/issues/issue-1/comments/trigger-preview",
+      "status": 200,
+      "contentType": "application/json",
+      "body": {
+        "agents": [
+          {
+            "id": "agent-1",
+            "name": "Review Agent",
+            "avatar_url": "/uploads/agent-custom-avatar.png",
+            "source": "issue_assignee",
+            "reason": ""
+          }
+        ],
+        "blocked": []
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4318/api/issues/issue-1/comments/trigger-preview",
+      "status": 200,
+      "contentType": "application/json",
+      "body": {
+        "agents": [
+          {
+            "id": "agent-1",
+            "name": "Review Agent",
+            "avatar_url": "/uploads/agent-custom-avatar.png",
+            "source": "issue_assignee",
+            "reason": ""
+          }
+        ],
+        "blocked": []
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4318/uploads/agent-custom-avatar.png",
+      "status": 200,
+      "contentType": "image/png"
+    }
+  ],
+  "errors": [],
+  "pageText": "Upstream component reproduction\nSynthetic local fixture\nComment trigger avatars\n\nReal Multica comment and reply components, editor, avatar fallback and styles. The API and custom image are served from a different local origin.\n\nAPI avatar\nRelative URL\nAbsolute URL\nEmoji\nPreview\nOne agent\nTwo agents\nCustom image control\n\nAlways loads the same file directly from the API origin.\n\nNew comment\n\nPlease review this change before I merge it.\n\nWill start when sent\nReply to a comment\n🧑‍💻\n\nI have added a regression test. Please take another look.\n\nWill start when sent\n\nComponent-level reproduction using local fixture data. Sending is disabled by the host callback.",
+  "composers": [
+    {
+      "id": "repro-comment",
+      "text": "Please review this change before I merge it.TextWill start when sent",
+      "botCount": 0,
+      "images": [
+        {
+          "alt": "Review Agent",
+          "src": "http://127.0.0.1:4318/uploads/agent-custom-avatar.png",
+          "currentSrc": "http://127.0.0.1:4318/uploads/agent-custom-avatar.png",
+          "complete": true,
+          "naturalWidth": 192
+        }
+      ],
+      "editors": 1
+    },
+    {
+      "id": "repro-reply",
+      "text": "🧑‍💻I have added a regression test. Please take another look.TextWill start when sent",
+      "botCount": 0,
+      "images": [
+        {
+          "alt": "Review Agent",
+          "src": "http://127.0.0.1:4318/uploads/agent-custom-avatar.png",
+          "currentSrc": "http://127.0.0.1:4318/uploads/agent-custom-avatar.png",
+          "complete": true,
+          "naturalWidth": 192
+        }
+      ],
+      "editors": 1
+    }
+  ],
+  "allImages": [
+    {
+      "alt": "Custom avatar control",
+      "src": "http://127.0.0.1:4318/uploads/agent-custom-avatar.png",
+      "loaded": true
+    },
+    {
+      "alt": "Review Agent",
+      "src": "http://127.0.0.1:4318/uploads/agent-custom-avatar.png",
+      "loaded": true
+    },
+    {
+      "alt": "Review Agent",
+      "src": "http://127.0.0.1:4318/uploads/agent-custom-avatar.png",
+      "loaded": true
+    }
+  ]
+}
