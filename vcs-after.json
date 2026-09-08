@@ -1,0 +1,14 @@
+{
+  "phase": "after",
+  "scenario": "vcs",
+  "expectedToast": "Copied to clipboard",
+  "errors": [],
+  "copyAttempts": [
+    {
+      "command": "copy",
+      "value": "https://multica.example/webhook/demo",
+      "result": true
+    }
+  ],
+  "text": "Multica · Upstream component reproduction · Synthetic local fixture\n\nAfter · VCS webhook copying\n\nClipboard API unavailable; legacy copy returns true.\n\nConnect a self-hosted Forgejo, Gitea, or GitLab instance to mirror pull requests onto issues. Each connection uses an access token; agents push branches and open PRs using the runtime's own Git credentials.\n\nFinish setup in your provider\n\nAdd a webhook on your repository or organisation with the URL and secret below. Forgejo/Gitea: choose the Gitea format and the Pull Request (and Commit Status) events. GitLab: paste the secret as the token and enable Merge request and Pipeline events.\n\nWebhook URL\nWebhook secret\n\nCopy the secret now. It is shown only once and cannot be retrieved later.\n\nConnect a provider instance\n\nProvider\nForgejo\nInstance URL\nAccess token\n\nCreate an access token with read access to repositories. Forgejo/Gitea: Settings, Applications. GitLab: a personal access token with the read_api scope.\n\nConnect\nCopied to clipboard\nProvider connected"
+}

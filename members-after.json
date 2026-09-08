@@ -1,0 +1,14 @@
+{
+  "phase": "after",
+  "scenario": "members",
+  "expectedToast": "Failed to copy link",
+  "errors": [],
+  "copyAttempts": [
+    {
+      "command": "copy",
+      "value": "https://multica.example/join?code=demo-invite",
+      "result": false
+    }
+  ],
+  "text": "Multica · Upstream component reproduction · Synthetic local fixture\n\nAfter · Share-link copy feedback\n\nClipboard API unavailable; legacy copy returns false.\n\nMembers\nMembers (1)\nInvite member\nMember\nInvite\nAM\nAlex Morgan\nalex@example.test\nOwner\nShare links\nCreate share link\nRole:\nMember\nExpiry:\n7 days\nGenerate\n0 / ∞ uses\nhttps://multica.example/join?code=demo-invite\nMember\nFailed to copy link"
+}
